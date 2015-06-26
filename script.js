@@ -1,16 +1,24 @@
+$(document).ready( function userArrive() {
+    $("#p1").css({'margin-top': '270px'});
+    $("#p1").animate({'margin-left': '-130px'}, 1);
+    $("#p1").animate({'margin-left': '20px'}, 500);
+});
+
 $(document).ready( function enemyArrive() {
-$("#e1").animate({'margin-right': '-130px'}, 1);
-$("#e1").animate({'margin-right': '20px'}, 19000 ?enemyMove:function(){});
-function enemyMove() {
-var random = Math.random();
-    if (random <= 0.3) {
-        $("#e1").animate({'margin-top': '20px'}, 2000 ?enemyMove:function(){});
-    } else if (random <= 0.6) {
-        $("#e1").animate({'margin-top': '270px'}, 2000 ?enemyMove:function(){});
-    } else if (random <= 1) {
-        $("#e1").animate({'margin-top': '540px'}, 2000 ?enemyMove:function(){});
+    $("#e1").css({'margin-top': '270px'});
+    $("#e1").animate({'margin-right': '-130px'}, 1);
+    $("#e1").animate({'margin-right': '20px'}, 1000 ?enemyMove:function(){});
+
+    function enemyMove() {
+    var random = Math.random();
+        if (random <= 0.3) {
+            $("#e1").animate({'margin-top': '20px'}, 2000 ?enemyMove:function(){});
+        } else if (random <= 0.6) {
+            $("#e1").animate({'margin-top': '270px'}, 2000 ?enemyMove:function(){});
+        } else if (random <= 1) {
+            $("#e1").animate({'margin-top': '540px'}, 2000 ?enemyMove:function(){});
+        }
     }
-}
 });
 
 $(document).keydown(function(e) {
@@ -27,7 +35,7 @@ var ePosition = $("#e1").css('margin-top');
         break;
 
         case 39: // right
-        $("#shot").animate({'margin-left': '1020px'});
+        $("#shot").animate({'margin-left': '1520px'});
         $("#shot").animate({'margin-left': '11px'}, 1);
         var ballTop = $("#shot").offset().top;
         var enemyTop = $("#e1").offset().top;

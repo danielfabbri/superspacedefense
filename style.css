@@ -1,6 +1,5 @@
 body {margin:15px 0 0 0; background:#888;}
-.wrap { overflow: hidden; width:1024px; height:668px; background:#000; margin:0 auto; }
+.wrap { overflow: hidden; height:668px; background:#000; margin:0 auto; }
 #p1 { float: left; width:120px; height:90px; background-image: url('images/nave1.png'); margin: 20px; z-index: 2; }
-
 #e1 { float: right; width:120px; height:90px; background-image: url('images/nave2.png'); margin: 20px; }
 #shot { margin: 41px 11px; width:30px; height:8px; background:#42579d; border-radius: 4px; z-index: 1;}
